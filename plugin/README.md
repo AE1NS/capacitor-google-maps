@@ -1,3 +1,5 @@
+https://github.com/ionic-team/capacitor-google-maps/issues/29
+
 # @capacitor/google-maps
 
 Google maps on Capacitor
