@@ -1,6 +1,6 @@
 {
-  "name": "@capacitor/google-maps",
-  "version": "8.0.1",
+  "name": "@capacitor-a1/google-maps",
+  "version": "8.0.1-a1.4",
   "description": "Google maps on Capacitor",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
@@ -17,7 +17,7 @@
     "android/src/main/",
     "android/build.gradle",
     "dist/",
-    "CapacitorGoogleMaps.podspec",
+    "CapacitorA1GoogleMaps.podspec",
     "ios/Sources",
     "ios/Tests",
     "Package.swift"
@@ -26,10 +26,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/capacitor-google-maps.git"
+    "url": "git+https://github.com/AE1NS/capacitor-google-maps.git"
   },
   "bugs": {
-    "url": "https://github.com/ionic-team/capacitor-google-maps/issues"
+    "url": "https://github.com/AE1NS/capacitor-google-maps/issues"
   },
   "keywords": [
     "capacitor",
@@ -52,7 +52,7 @@
     "clean": "rimraf ./dist",
     "watch": "tsc --watch",
     "prepublishOnly": "pnpm run build",
-    "publish:cocoapod": "pod trunk push ./CapacitorGoogleMaps.podspec --allow-warnings",
+    "publish:cocoapod": "pod trunk push ./CapacitorA1GoogleMaps.podspec --allow-warnings",
     "downleveldts": "pnpm downlevel-dts dist/typings dist/typings/ts_old --to=3.5",
     "pack-local": "pnpm run build && pnpm pack && find . -name 'capacitor-google-maps-*tgz' -exec bash -c 'mv $0 capacitor-google-maps.tgz' {} \\; ",
     "unittest:ios": "xcodebuild test -project ./unit-tests/ios/GoogleMapsPlugin/GoogleMapsPlugin.xcodeproj -scheme TestApp -destination 'platform=iOS Simulator,name=iPhone 12,OS=15.2' | xcpretty && exit ${PIPESTATUS[0]}",
